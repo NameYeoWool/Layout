@@ -43,7 +43,7 @@
                 android:paddingTop="4dp"
                 android:text="@string/id"
                 android:textColor="#ff222222"
-                android:textSize="18sp" />
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/usernameEntry"
