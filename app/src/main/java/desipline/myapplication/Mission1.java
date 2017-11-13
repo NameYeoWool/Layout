@@ -17,7 +17,7 @@ public class Mission1 extends AppCompatActivity {
         setContentView(R.layout.activity_mission1);
 
         imageView01 = (ImageView)findViewById(R.id.imageView01);
-        imageView02 = (ImageView)findViewById(R.id.imageView02);
+        //imageView02 = (ImageView)findViewById(R.id.imageView02);
         ImageButton button01 = (ImageButton)findViewById(R.id.button01);
         ImageButton button02 = (ImageButton)findViewById(R.id.button02);
 
