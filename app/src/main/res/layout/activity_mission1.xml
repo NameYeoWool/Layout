@@ -4,51 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="desipline.myapplication.Mission1">
+    tools:context="desipline.myapplication.Mission1"
+    tools:layout_editor_absoluteY="81dp">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-        <ScrollView
-            android:id="@+id/scrollView01"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            >
-            <ImageView
-                android:id="@+id/imageView01"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/seol_heyon"
-                android:layout_alignParentTop="true"
-                />
-        </ScrollView>
-        <ImageButton
-            android:id="@+id/button01"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/north_arrow"
-            android:layout_below="@+id/scrollView01"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="120dp"
-            />
-        <ImageButton
-            android:id="@+id/button02"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/south_arrow"
-            android:layout_below="@+id/scrollView01"
-            android:layout_toRightOf="@+id/button01"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="60dp"
-            />
-        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="350dp">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seol_heyon" />
+            </ScrollView>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@+id/button01"
-            android:layout_marginTop="30dp"
-            >
-        </ScrollView>
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="341dp">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/seol_heyon"
+                    android:visibility="invisible"
+                    />
+            </ScrollView>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/imageButton01"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="119dp"
+            android:layout_marginStart="119dp"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton02"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/imageButton01"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_toEndOf="@+id/imageButton01"
+            android:layout_toRightOf="@+id/imageButton01"
+            />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
